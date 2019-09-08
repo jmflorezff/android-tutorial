@@ -30,6 +30,16 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
         startActivity(intent);
     }
 
+    public void onClickButtonShare(View button) {
+        Intent shareIntent = new Intent();
+
+        shareIntent.setAction(Intent.ACTION_SEND);
+        shareIntent.putExtra(Intent.EXTRA_TEXT, editText.getText().toString());
+        shareIntent.setType("text/plain");
+
+        startActivity(Intent.createChooser(shareIntent, "Share"));
+    }
+
     @Override
     public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
         if (keyEvent.getAction() == KeyEvent.ACTION_DOWN &&
