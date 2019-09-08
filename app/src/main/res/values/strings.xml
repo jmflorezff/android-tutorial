@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidTutorial</string>
+    <string name="string_main_placeholder">Input your text</string>
 </resources>
