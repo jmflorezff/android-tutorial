@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
 
         Intent intent = new Intent(this, DisplayActivity.class);
 
-        intent.putExtra(DisplayActivity.EXTRA_MESSAGE, text);
+        intent.putExtra(Intent.EXTRA_TEXT, text);
 
         startActivity(intent);
     }
