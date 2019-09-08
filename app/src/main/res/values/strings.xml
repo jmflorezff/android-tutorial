@@ -2,4 +2,6 @@
     <string name="app_name">AndroidTutorial</string>
     <string name="string_main_placeholder">Input your text</string>
     <string name="string_hello_world">Hello World!</string>
+    <string name="label_button_display">Display</string>
+    <string name="message_empty_input">Please input some text</string>
 </resources>

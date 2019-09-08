@@ -1,10 +1,12 @@
 package edu.utdallas.seers.android.tutorial;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -13,6 +15,20 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
     private EditText editText;
     private TextView textView;
     private ViewModel viewModel;
+
+    public void onClickDisplayButton(View button) {
+        String text = editText.getText().toString();
+        if (text.isEmpty()) {
+            Toast.makeText(this, R.string.message_empty_input, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        Intent intent = new Intent(this, DisplayActivity.class);
+
+        intent.putExtra(DisplayActivity.EXTRA_MESSAGE, text);
+
+        startActivity(intent);
+    }
 
     @Override
     public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {

@@ -29,4 +29,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_main_message" />
 
+    <Button
+            android:id="@+id/button_main_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickDisplayButton"
+            android:text="@string/label_button_display"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_main_input" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
