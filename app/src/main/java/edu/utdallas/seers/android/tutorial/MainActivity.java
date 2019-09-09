@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
         startActivity(Intent.createChooser(shareIntent, "Share"));
     }
 
+    public void onClickScratchButton(View button) {
+        startActivity(new Intent(this, ScratchActivity.class));
+    }
+
     @Override
     public boolean onKey(View view, int keyCode, KeyEvent keyEvent) {
         if (keyEvent.getAction() == KeyEvent.ACTION_DOWN &&

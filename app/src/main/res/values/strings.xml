@@ -5,4 +5,6 @@
     <string name="label_button_display">Display</string>
     <string name="message_empty_input">Please input some text</string>
     <string name="label_button_share">Share</string>
+    <string name="label_button_clear">Clear</string>
+    <string name="label_button_scratch" >Scratch</string>
 </resources>
